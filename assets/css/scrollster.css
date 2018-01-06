@@ -1,0 +1,173 @@
+body, #instafeed, .tag-header h1 {
+	background: #3f729b;
+}
+
+body,
+a,
+a:hover,
+a:focus,
+a:active {
+	color: #fff;
+	text-decoration: none;
+}
+
+body,
+#instafeed {
+	height: 100vh;
+	width: 100vw;
+}
+
+/* In case JS breaks! */
+#instafeed:empty {
+	background: url("../img/scrollster.png") no-repeat fixed center center / cover  #3f729b;
+}
+
+.tag-header {
+  left: 0;
+  position: fixed;
+  text-align: left;
+  top: 80px;
+}
+
+.tag-header h1 {
+  display: inline-block;
+  font-size: 32px;
+  line-height: 32px;
+  padding: 20px;
+  text-shadow: 0 0 1px #fff;
+  font-weight: 700;
+  margin: 0 0 0 -1px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* In case JS breaks */
+.tag-header h1:empty {
+  display: none;
+}
+
+.caption {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 5px 5px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  
+}
+
+.author {
+  font-size: 28px;
+  font-weight: 700;
+  left: 0;
+  padding: 15px 5px 5px 15px;
+  position: absolute;
+  text-shadow: 0 1px 1px #000;
+  top: 0;
+}
+
+.likes {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 15px 15px 5px 5px;
+  position: absolute;
+  right: 0;
+  text-shadow: 0 1px 1px #000;
+  top: 0;
+  margin-left: 1em;
+}
+
+/* https://css-tricks.com/examples/ShapesOfCSS/ */
+.heart {
+    position: relative;
+    left: -1em;
+}
+
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 13px;
+    top: 3px;
+    width: 13px;
+    height: 20px;
+    background: red;
+    -moz-border-radius: 25px 25px 0 0;
+    border-radius: 25px 25px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+.comments {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 15px 15px 5px 5px;
+  position: absolute;
+  right: 0;
+  text-shadow: 0 1px 1px #000;
+  top: 28px;
+}
+
+.comment {
+    position: relative;
+    left: -0.25em;
+    top: -3px;
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.comment:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 7px;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+
+.error {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  padding: 10px 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.tile {
+	overflow: hidden;
+}
